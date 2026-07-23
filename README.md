@@ -11,6 +11,13 @@ hard union, so they merge into one continuous surface instead of colliding.
 Includes normal estimation via finite differences, diffuse lighting, and
 2x2 supersampled antialiasing.
 
+![Soft shadows on a ground plane](output3.png)
+
+A ground plane and soft shadows, cast by marching a secondary ray toward
+the light and darkening the result based on how closely it grazes other
+geometry along the way — producing a soft penumbra instead of a hard
+on/off shadow.
+
 Distance function formulas are from Inigo Quilez's
 [iquilezles.org](https://iquilezles.org/articles/distfunctions/).
 
